@@ -1,0 +1,9 @@
+body {
+    font-family: 'Roboto-Light', sans-serif;
+    user-select: none;
+    cursor: default;
+}
+
+.full-width-div {
+    width: 100%;
+}

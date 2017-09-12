@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Smart ball JS</title>
+  <!--Include CSS-->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/roboto-fontface/css/roboto/roboto-fontface.css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./main.css">
+  <!--Include JS-->
+  <script>require('jquery')</script>
+  <script>require('./smart-ball')</script>
+</head>
+<body>
+<div class="container">
+  <br>
+  <h1>Smart ball JS</h1>
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-primary" id="btnStart">
+        <i class="fa fa-play"></i>
+        Start
+      </button>
+      <button type="button" class="btn btn-danger" id="btnPause">
+        <i class="fa fa-pause"></i>
+        Pause
+      </button>
+      <button type="button" class="btn btn-info" id="btnRefresh">
+        <i class="fa fa-refresh"></i>
+        Reset
+      </button>
+      <button type="button" class="btn btn-danger" id="btnToogleANN">
+        <i class="fa fa-magic"></i>
+        Neural network
+      </button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-6">
+      <div class="alert alert-secondary" role="alert" id="alrResult">
+        ?
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="alert alert-info" role="alert" id="alrError">
+        Error: -
+      </div>
+    </div>
+  </div>
+  <div class="full-width-div" id="render-box"></div>
+</div>
+</body>
+</html>
